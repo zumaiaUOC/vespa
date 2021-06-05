@@ -19,7 +19,7 @@ timezone                :     #"Europe/Madrid ,see https://jekyllrb.com/docs/con
 
 # SEO
 og_image                :     #default[author.avatar (see below)] or [github-avatar]
-twitter_site            :     zumaia
+twitter_site            :     #zumaia
 author:
   name                  :  Oscar Rojo Martín   # Name Surname Company
   avatar                :  https://github.com/zumaia.png   # Try a square file. Info: Your github avatar on https://github.com/zumaia.png
@@ -101,6 +101,12 @@ navbar:
     url     : https://github.com/zumaiaUOC/vespa
   - title   : Dataset
     url     : https://kopuru.com/desafio/vespa-velutina
+  - title   : DataStudio
+    url     : https://datastudio.google.com/s/uzZi6wVBX-8
+  - title   : Shinyapp
+    url     : https://oscar-rojo-martin.shinyapps.io/Vespa
+  - title   : Rpubs
+    url     : https://rpubs.com/zumaia/vespa
 #  - title   : # Label submenu
 #    child:		
 #    - title: # Child label		

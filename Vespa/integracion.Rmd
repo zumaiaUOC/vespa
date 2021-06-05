@@ -18,7 +18,7 @@ output:
     toc_depth: 3
     toc_collapsed: true
     includes:
-      in_header: .../img/header.html
+      in_header: header.html
   pdf_document: 
     latex_engine: xelatex
     highlight: zenburn
@@ -32,7 +32,7 @@ header-includes:
       - \usepackage{graphicx}
       - \pagestyle{fancy}
       - \setlength{\headheight}{12.69003pt}
-      - \fancyfoot[L]{\includegraphics[width=4cm]{../img/footer.png}}
+      - \fancyfoot[L]{\includegraphics[width=4cm]{footer.png}}
       - \fancyfoot[C]{Oscar Rojo Martín}
       - \fancyfoot[R]{\thepage}
 always_allow_html: yes

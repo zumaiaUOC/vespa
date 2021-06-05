@@ -63,7 +63,7 @@ Las avispas obreras detectan las colonias de abejas por el olor de la miel y del
 ## Contribuciones
 | Contribuciones       | Firma    | 
 | :------------- | :----------: | 
-|  Investigación previa | Integrante 1| 
+| Investigación previa | Integrante 1| 
 | Redacción de las respuestas   | Integrante 1| 
 | Desarrollo código   | Integrante 1 | 
         

@@ -7,12 +7,12 @@ remote_theme: dieghernan/chulapa
 # A. Site Settings /SEO options
 # Overall options for your site, would affect your site SEO
 # Default values are explained
-locale                  :     #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
+locale                  : es-ES    #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
 title                   : Data-clean    #default["repository_name"]
 title_separator         :     #default [" | "]
-subtitle                : Tipología y ciclo de vida de los datos    #default [your-repository-tagline]  
-description             : Limpieza y análisis de datos #default [your-repository-tagline]
-url                     :     #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
+subtitle                : Visualización de Datos    #default [your-repository-tagline]
+description             : Avispa Asiatica #default [your-repository-tagline]
+url                     : https://zumaiauoc.github.io/vespa/    #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
 baseurl                 :     #On Github Pages you may leave it blank. Have a look to: https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 words_per_minute        :     #default[200]
 timezone                :     #"Europe/Madrid ,see https://jekyllrb.com/docs/configuration/options/ and https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -21,13 +21,13 @@ timezone                :     #"Europe/Madrid ,see https://jekyllrb.com/docs/con
 og_image                :     #default[author.avatar (see below)] or [github-avatar]
 twitter_site            :     zumaia
 author:
-  name                  :  Oscar Rojo Martín  &  Álvaro Rodríguez Pardo   # Name Surname Company
-  avatar                :     # Try a square file. Info: Your github avatar on https://github.com/[USERNAME].png
-  location              :  "Donostia, Spain"   # New York, USA 
-#  links:                
-#    - url:  #A link or email: https://twitter.com/jack, mail@example.com
+  name                  :  Oscar Rojo Martín   # Name Surname Company
+  avatar                :  https://github.com/zumaia.png   # Try a square file. Info: Your github avatar on https://github.com/zumaia.png
+  location              :  Donostia, Spain   # New York, USA
+  links:
+    - url:  www.oscarrojo.es
 #      icon: # A Fontawesome 5 code: fab fa-twitter - see https://fontawesome.com/
-#    - url:  # Another link
+    - url:  zumaia@gmail.com
 #      icon: # Anothet FontAwesome code
 
 fa5_kit_code:  # Your FontAwesome 5 kit code. If not provided a free hosted version (slower) will be loaded:  https://fontawesome.com/ 
@@ -96,11 +96,11 @@ navbar:
     img     :  # An small image, try 30x30px
   nav:
   - title   : Readme
-    url     : https://github.com/zumaiaUOC/data-clean/blob/master/README.md
+    url     : https://github.com/zumaiaUOC/vespa/blob/master/README.md
   - title   : Repo
-    url     : https://github.com/zumaiaUOC/data-clean
+    url     : https://github.com/zumaiaUOC/vespa
   - title   : Dataset
-    url     : https://www.kaggle.com/sulianova/cardiovascular-disease-dataset?select=cardio_train.csv
+    url     : https://kopuru.com/desafio/vespa-velutina/
 #  - title   : # Label submenu
 #    child:		
 #    - title: # Child label		
@@ -112,7 +112,7 @@ footer:
   links:
     - label : Repo on Github # Label
       icon  : fab fa-github # Fontawesome 5 icon
-      url   : https://github.com/zumaiaUOC/data-clean # A link or email: https://twitter.com/jack, mail@example.com
+      url   : https://zumaiauoc.github.io/vespa/ # A link or email: https://twitter.com/jack, mail@example.com
     - label: "RSS"
       icon: "fa fa-rss"
       url:  "./atom.xml"
@@ -240,4 +240,4 @@ sass:
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
-theme: jekyll-theme-hacker
+theme: jekyll-theme-merlot

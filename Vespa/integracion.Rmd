@@ -1,0 +1,275 @@
+---
+title: 'PRA2 - Visualización'
+author: "Óscar Rojo Martín"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+degree: "Master Ciencia de datos"
+institute: "Universitat Oberta de Catalunya"
+toc-title: Índice
+output:
+  html_document:
+    highlight: default
+    code_folding: show   # mostrar boton para mostrar o no el código
+    number_sections: no
+    theme: cerulean
+    fig_caption: yes
+    df_print: paged
+    toc: yes
+    toc_float: true # tabla contenidos flotante
+    toc_depth: 3
+    toc_collapsed: true
+    includes:
+      in_header: .../img/header.html
+  pdf_document: 
+    latex_engine: xelatex
+    highlight: zenburn
+    toc: yes
+    fig_caption: yes
+    keep_tex: yes
+  word_document: default
+urlcolor: blue
+header-includes:
+      - \usepackage{fancyhdr}
+      - \usepackage{graphicx}
+      - \pagestyle{fancy}
+      - \setlength{\headheight}{12.69003pt}
+      - \fancyfoot[L]{\includegraphics[width=4cm]{../img/footer.png}}
+      - \fancyfoot[C]{Oscar Rojo Martín}
+      - \fancyfoot[R]{\thepage}
+always_allow_html: yes
+---
+
+
+```{r include = FALSE}
+# Indicamos que todos los chunk se oculten
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+# 1) Título de la visualización donde se presentan la visualización realizada. URL de la visualización y del código. Y descripción corta del documento y del que se presenta
+## 1.1) El código es tiene que publicar en un repositorio público de GitHub con una licencia de código abierto. Tiene que contenga los archivos necesarios para correr la aplicación en local con la ayuda de un servidor web si fuera necesario.
+## 1.2) La URL de la visualización tiene que ser pública y poderse explorar sin login. Por ejemplo GitHub pages (https://pages.github.com/), surge.sh o subir la aplicación a un espacio web propio accesible o compartir un url accesible sin usuario y contraseña.
+# 2) Explicar razonadamente qué preguntas responde la visualización presentada y qué uso puede tener
+por un usuario tipo.
+# 3) Descripción técnica del proyecto: lenguajes, librerías, licencias, descripción técnica del proyecto.
+#4) La/s visualizaciones realizadas
+
+
+
+# 1. Descripción del dataset. 
+
+\pagebreak
+
+### Preparado workspace
+
+```{r}
+# Limpiamos el workspace, por si hubiera algun dataset o informacion cargada
+rm(list = ls())
+
+# Limpiamos la consola
+cat("\014")
+```
+
+
+\pagebreak
+
+### Carga de librerias
+
+```{r message=FALSE, warning=FALSE}
+# source("loadPackages.R")
+
+packages <- c("ggplot2","ggpubr","readr","plotly","tidyverse","lubridate",
+              "magrittr","funModeling","skimr", "rgdal", "zoo")
+
+new <- packages[!(packages %in% installed.packages()[,"Package"])]
+if(length(new)) install.packages(new)
+a=lapply(packages, require, character.only=TRUE)
+```
+
+
+\pagebreak
+
+# 2. Integración y selección de los datos de interés a analizar.
+
+Procedemos a cargar el conjunto de datos
+
+
+```{r}
+seasons_impute <- read.csv('../Work/seasons_impute.csv', sep = ',', header = TRUE)
+
+waspbusters <- read.csv('../Work/WaspBusters_20210504_LARVAE.csv', sep = ',', header = TRUE)
+
+wb_geo <- read.csv('../Work/WBds01_GEO.csv', sep = ',', header = FALSE,
+                   skip =0)
+wb_meteo <- read.csv('../Work/WBds02_METEO.csv', sep = ',', header = TRUE)
+
+wb_queen_wasp <- read.csv('../Work/WBds03_all_the_queens_wasps.csv', sep = ',')
+
+estaciones <- read.csv('../data/estaciones.csv', sep = ',')
+
+fruta <- read.csv('../data/fruta.csv', sep = ',')
+
+met <- read.csv('../data/met.csv', sep = ',')
+
+nido <- read.csv('../data/nido.csv', sep = ',')%>%
+  dplyr::select(1,4,6,7,8,9,0,11,12,13,14,16,19)
+
+loc_estaciones <- read.csv('../Input_open_data/ds05_LOCALIZACION-ESTACIONES-METEOROLOGICAS.csv', sep = ';')
+```
+
+# Local. estaciones metereologicas
+```{r}
+loc_estaciones1 <- loc_estaciones[complete.cases(loc_estaciones),]
+loc_estaciones2 <- data.frame(x=loc_estaciones1$YUTM,y=loc_estaciones1$XUTM) 
+coordinates(loc_estaciones2) <- ~x+y 
+class(loc_estaciones2)
+proj4string(loc_estaciones2) <- CRS("+proj=utm +zone=31+datum=WGS84 +units=m +ellps=WGS84") 
+loc_estaciones3 <- spTransform(loc_estaciones2,CRS("+proj=longlat +datum=WGS84"))
+```
+```{r}
+df_loc_est <- as.data.frame(loc_estaciones3)
+
+data_loc_est <- cbind(loc_estaciones,df_loc_est)
+data_loc_est$latitude <- data_loc_est$x+4.219
+data_loc_est$longitude <- data_loc_est$y-6.62
+# Seleccionamos los datos que nos interesas
+data_loc_est <- data_loc_est %>%
+  select(1,2,3,6,9,10)
+```
+
+# Nido de Avispas
+
+```{r}
+colnames(nido)<-c("id","fecha","usuario", "municipio", "direccion", "especie","altura","diametro","longitude","latitude","estado","agente")
+nido$fecha <- as.Date(nido$fecha)
+nido$longitude <- gsub(",",".",nido$longitude)
+nido$longitude <- as.integer(nido$longitude)
+nido$latitude <- gsub(",",".",nido$latitude)
+nido$latitude <- as.integer(nido$latitude)
+```
+Convertir UTM en 
+```{r}
+# library(rgdal)
+nido <- nido[complete.cases(nido),]
+nido1 <- data.frame(x=nido$latitude,y=nido$longitude) 
+coordinates(nido1) <- ~x+y 
+class(nido1)
+proj4string(nido1) <- CRS("+proj=utm +zone=31+datum=WGS84 +units=m +ellps=WGS84") 
+nido2 <- spTransform(nido1,CRS("+proj=longlat +datum=WGS84"))
+```
+
+Fisionar SpatianPoint a Nido
+```{r}
+DF <- as.data.frame(nido2)
+
+data_nido <- cbind(nido,DF)
+data_nido$latitude <- data_nido$x+4.219
+data_nido$longitude <- data_nido$y-6.62
+```
+Obtener Mes y año
+```{r}
+data_nido[, "año"] <- as.numeric(format(data_nido[,"fecha"], "%Y"))
+data_nido[, "mes"] <- as.numeric(format(data_nido[,"fecha"], "%m"))
+mymonths <- c("Jan","Feb","Mar",
+              "Apr","May","Jun",
+              "Jul","Aug","Sep",
+              "Oct","Nov","Dec")
+#add abbreviated month name
+data_nido <- transform(data_nido, mes = month.abb[mes])
+head(data_nido)
+```
+Guardamos el fichero
+```{r}
+write.csv(data_nido,'data/data_nido.csv', row.names = FALSE)
+```
+```{r}
+library(ggpmisc)
+nidos_fechas <- data_nido%>%
+  select(fecha,especie)%>%
+  group_by(fecha,especie)%>%
+  mutate(num_nidos = n())%>% 
+  arrange(fecha)
+
+nidos_fechas <- nidos_fechas[!duplicated(nidos_fechas), ]
+
+ggplotly(ggplot(data = nidos_fechas, aes(x = fecha, y = num_nidos, color = especie)) +
+    geom_point() +
+  geom_smooth(method=lm) +
+  theme_bw())
+```
+
+```{r}
+
+nidos_municipio <- data_nido%>%
+  select(fecha, municipio)%>%
+  group_by(month=floor_date(fecha, "month"),municipio) %>%
+  mutate(num_nidos = n())%>% 
+  arrange(month)
+
+nidos_municipio <- nidos_municipio[!duplicated(nidos_municipio), ]
+
+ggplotly(ggplot(data = nidos_municipio, aes(x = fecha, y = num_nidos, color = municipio)) +
+    geom_line() +
+  theme_bw())
+```
+
+
+
+```{r eval=FALSE, include=FALSE}
+library(leaflet)
+leaflet() %>%
+  addMarkers(data = data_nido, 
+             lat = ~ latitude, 
+             lng = ~ longitude, 
+             popup = nido$municipio) %>%
+  addTiles()
+```
+
+
+# Frutales
+```{r}
+by_cod <- fruta %>% group_by(CODIGO.MUNICIPIO)%>% distinct()
+head(by_cod)
+by_cod_list <- fruta %>% group_by(CODIGO.MUNICIPIO)%>% distinct() %>%
+ summarise(alltypes = paste(PRODUCTODES_C, collapse=", ") )
+head(by_cod)
+```
+
+# Tiempo
+```{r}
+head(seasons_impute)
+
+seasons_impute$month1 <- str_replace_all(
+  seasons_impute$month, # column we want to search
+  c("ENE" = "1","FEB" = "2","MAR" = "3","ABR" = "4","MAY" = "5","JUN" = "6",
+    "JUL" = "7","AGO" = "8","SEP" = "9","OCT" = "10","NOV" = "11","DIC" = "12") # each string schould be matched with a replacement
+)
+seasons_impute$month1 <- as.numeric(seasons_impute$month1)
+seasons_impute$year <- as.numeric(seasons_impute$year)
+
+seasons_impute$fecha2 <- as.yearmon(paste(seasons_impute$year, seasons_impute$month1), "%Y-%m")
+seasons_impute$fecha1<-as.Date(with(seasons_impute,paste(year,month1,sep="-")),"%Y-%m")
+weather <- transform(seasons_impute, fecha = as.Date(as.yearmon(paste(year, month1, sep = "-"))))
+weather <- weather %>%
+  dplyr::select(47,4,5,8:43)
+weather[, "año"] <- as.numeric(format(weather[,"fecha"], "%Y"))
+weather[, "mes"] <- as.numeric(format(weather[,"fecha"], "%m"))
+ 
+```
+
+Fusionamos los datos de las estaciones metereologicas con la localización
+
+```{r}
+weather_df <- merge(weather, data_loc_est, by.x = "codigo",  by.y = "CODIGO")
+
+weather_df <-  weather_df %>%
+  select(2,1,40:46,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38)
+```
+
+
+Guardamos el fichero
+```{r}
+write.csv(weather_df,'data/weather.csv')
+```
+

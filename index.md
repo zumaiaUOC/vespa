@@ -2,8 +2,7 @@
 layout: default
 title: Avispa Asiatica en Bizkaia
 header_type: hero  
-subtitle: Visualización Datos - UOC
-author: Oscar Rojo Martín  
+subtitle: Visualización Datos
 ---
 
 # Avispa Asiatica en Bizkaia  

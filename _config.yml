@@ -8,10 +8,10 @@ remote_theme: dieghernan/chulapa
 # Overall options for your site, would affect your site SEO
 # Default values are explained
 locale                  :     #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
-title                   : Data-clean    #default["repository_name"]
+title                   : Vespa Velutina - Avispa Asiatica en Bizkaia   #default["repository_name"]
 title_separator         :     #default [" | "]
-subtitle                : Tipología y ciclo de vida de los datos    #default [your-repository-tagline]  
-description             : Limpieza y análisis de datos #default [your-repository-tagline]
+subtitle                : Visualización de los datos    #default [your-repository-tagline]  
+description             : Practica #default [your-repository-tagline]
 url                     :     #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
 baseurl                 :     #On Github Pages you may leave it blank. Have a look to: https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 words_per_minute        :     #default[200]
@@ -19,9 +19,9 @@ timezone                :     #"Europe/Madrid ,see https://jekyllrb.com/docs/con
 
 # SEO
 og_image                :     #default[author.avatar (see below)] or [github-avatar]
-twitter_site            :     zumaia
+twitter_site            :     #zumaia
 author:
-  name                  :  Oscar Rojo Martín  &  Álvaro Rodríguez Pardo   # Name Surname Company
+  name                  :  Oscar Rojo Martín # Name Surname Company
   avatar                :     # Try a square file. Info: Your github avatar on https://github.com/[USERNAME].png
   location              :  "Donostia, Spain"   # New York, USA 
 #  links:                
@@ -96,11 +96,11 @@ navbar:
     img     :  # An small image, try 30x30px
   nav:
   - title   : Readme
-    url     : https://github.com/zumaiaUOC/data-clean/blob/master/README.md
+    url     : https://github.com/zumaiaUOC/vespa/blob/master/README.mdç
   - title   : Repo
-    url     : https://github.com/zumaiaUOC/data-clean
+    url     : https://github.com/zumaiaUOC/vespa
   - title   : Dataset
-    url     : https://www.kaggle.com/sulianova/cardiovascular-disease-dataset?select=cardio_train.csv
+    url     : https://kopuru.com/desafio/vespa-velutina
 #  - title   : # Label submenu
 #    child:		
 #    - title: # Child label		

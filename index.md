@@ -93,11 +93,13 @@ Las avispas obreras detectan las colonias de abejas por el olor de la miel y del
 
   - title   : DataStudiio
     url     : <a href="{{ https://datastudio.google.com/s/uzZi6wVBX-8 }}" target="_blank">{{ DataStudio }}</a>
-   ### <a href="https://datastudio.google.com/s/uzZi6wVBX-8" target="_blank" rel="noopener noreferrer">GITHUB</a>
+   ### <a href="https://datastudio.google.com/s/uzZi6wVBX-8" target="_blank" rel="noopener noreferrer">DataStudio</a>
   - title   : ShinyApp
     url     : https://oscar-rojo-martin.shinyapps.io/Vespa
+   ### <a href="https://oscar-rojo-martin.shinyapps.io/Vespa " target="_blank" rel="noopener noreferrer">ShinyApp</a>
   - title   : Rpubs
     url     : https://rpubs.com/zumaia/vespa
+    ### <a href="url     : https://rpubs.com/zumaia/vespa " target="_blank" rel="noopener noreferrer">Rpubs</a>
 
 ## Contribuciones
 

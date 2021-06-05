@@ -101,6 +101,12 @@ navbar:
     url     : https://github.com/zumaiaUOC/vespa
   - title   : Dataset
     url     : https://kopuru.com/desafio/vespa-velutina
+  - title   : DataStudiio
+    url     : https://datastudio.google.com/s/uzZi6wVBX-8
+  - title   : ShinyApp
+    url     : https://oscar-rojo-martin.shinyapps.io/Vespa
+  - title   : Rpubs
+    url     : https://rpubs.com/zumaia/vespa
 #  - title   : # Label submenu
 #    child:		
 #    - title: # Child label		

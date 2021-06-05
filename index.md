@@ -7,6 +7,8 @@ subtitle: Visualización Datos
 
 # Avispa Asiatica en Bizkaia  
 
+![](https://github.com/zumaiaUOC/vespa/blob/main/Vespa/www/banner_vespas.jpg)
+
 ## Conjunto de datos sobre la Avispa Asiatica en Bizkaia  
 
 La selección de la base de datos proviene de una propuesta realizada desde la plataforma [Kopuru](https://kopuru.com/).
@@ -34,6 +36,8 @@ La complejidad data de las diferentes fuentes que nos ofrecen y su futura integr
     * [2018: ](https://www.euskadi.eus/inventario-forestal-cae-2018/web01-a3estbin/es/)  
     * [2016: ](https://www.euskadi.eus/web01-a3estbin/es/contenidos/informacion/if_analisisdatos_mapa2016/es_def/index.shtml)   
 
+![](https://github.com/zumaiaUOC/vespa/blob/main/Vespa/www/Vespa_velutina.jpg)
+
 
 ## Autor  
 
@@ -47,13 +51,13 @@ La complejidad data de las diferentes fuentes que nos ofrecen y su futura integr
 * Asignatura: Visualización de Datos.  
 * Master de Data Science.  
 * [Universitat Oberta of Catalunya.](http://www.uoc.edu)  
-* Consultor/Profesor: Mireia Calvo Gonzalez  
+* Consultor/Profesor: Ignacio Javier Alcalde Perea  -  ialcalde@uoc.edu
 
 ## Dataset
 
 Puede chequear el dataset en la siguiente dirección:
 
-[https://kopuru.com/desafio/vespa-velutina/](https://kopuru.com/desafio/vespa-velutina/)
+[https://kopuru.com/desafio/vespa-velutina](https://kopuru.com/desafio/vespa-velutina)
 
 
 ## Descripción de los datos  
@@ -82,7 +86,7 @@ Las avispas obreras detectan las colonias de abejas por el olor de la miel y del
 
 ## Propietarios de los datos  
 
-[![Kopuru-Vespa Vetulina](https://kopuru.com/wp-content/uploads/2017/07/kopuru-black.png)](https://kopuru.com/desafio/vespa-velutina/)
+[![Kopuru-Vespa Vetulina](https://kopuru.com/wp-content/uploads/2017/07/kopuru-black.png)](https://kopuru.com/desafio/vespa-velutina)
 
 
 ## Resultado final

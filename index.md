@@ -1,14 +1,40 @@
 ---
 layout: default
-title: Cardio
+title: Avispa Asiatica en Bizkaia
 header_type: hero  
-subtitle: Práctica 2: Limpieza y análisis de datos  
+subtitle: Visualización Datos - UOC
+author: Oscar Rojo Martín  
 ---
 
-# CARDIO  
+# Avispa Asiatica en Bizkaia  
 
-## Conjunto de datos de enfermedades cardiovasculares  
-El conjunto de datos consta de 70 000 registros de datos de pacientes, 11 características + objetivo.  
+## Conjunto de datos sobre la Avispa Asiatica en Bizkaia  
+
+La selección de la base de datos proviene de una propuesta realizada desde la plataforma [Kopuru](https://kopuru.com/).
+Kopuru es una plataforma online que conecta empresas y científicos de datos. 
+
+Contamos con los datos hasta el 2019.
+
+
+
+* [Nidos Bizkaia.](https://www.opendatabizkaia.eus/es/catalogo/avispa-asiatica/recurso/datos-nidos-avispa-asiatica) 
+
+La complejidad data de las diferentes fuentes que nos ofrecen y su futura integración con los siguientes datasets:
+
+* [Localización de estaciones metereológicas.](https://kopuru.com/wp-content/uploads/2021/02/LOCALIZACION-ESTACIONES-METEOROLOGICAS.csv)  
+* Datos brutos recogidos por las estaciones meteorológicas.  
+    * [2019](https://kopuru.com/wp-content/uploads/2021/02/CSV-2019-ESTACIONES.zip)  
+    * [2018](https://kopuru.com/wp-content/uploads/2021/02/CSV-2018-ESTACIONES.zip)  
+    * [2017](https://kopuru.com/wp-content/uploads/2021/02/CSV-2017-ESTACIONES.zip)  
+    * [2016](https://kopuru.com/wp-content/uploads/2021/02/CSV-2016-ESTACIONES.zip)    
+* [Apicultura y Colmenas.](https://kopuru.com/wp-content/uploads/2021/02/APICULTURA_COLMENAS_KOPURU.csv)  
+* [Frutales declarados.](https://kopuru.com/wp-content/uploads/2021/02/FRUTALES-DECLARADOS-KOPURU.csv)  
+* Mapa forestal CAE:  
+    * [2020: ](https://www.euskadi.eus/mapa-forestal-cae-2020/web01-a2nekabe/es/)  
+    * [2019: ](https://www.euskadi.eus/mapa-forestal-cae-2019/web01-a2nekabe/es/)  
+    * [2018: ](https://www.euskadi.eus/inventario-forestal-cae-2018/web01-a3estbin/es/)  
+    * [2016: ](https://www.euskadi.eus/web01-a3estbin/es/contenidos/informacion/if_analisisdatos_mapa2016/es_def/index.shtml)   
+
 
 ## Autor  
 

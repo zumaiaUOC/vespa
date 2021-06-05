@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Cardio
+title: La Avispa Asiatica en Bizkaia 2018-2019
 header_type: hero  
-subtitle: Práctica 2: Limpieza y análisis de datos  
+subtitle: Visualización 
 ---
 
 # CARDIO  
@@ -70,14 +70,11 @@ https://www.kabble.com/
 
 | Contribuciones       | Firma    | 
 | :------------- | :----------: | 
-|  Investigación previa | Integrante 1, Integrante 2   | 
-| Redacción de las respuestas   | Integrante 1, Integrante 2 | 
-| Desarrollo código   | Integrante 1, Integrante 2 | 
+|  Investigación previa | Integrante   | 
+| Redacción de las respuestas   | Integrante  | 
+| Desarrollo código   | Integrante  | 
 
-Integrante 1: 
 
-        Alvaro Rodriguez Pardo          alvarorp22@uoc.edu
-        
         
 Integrante 2:
 

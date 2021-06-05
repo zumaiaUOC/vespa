@@ -240,4 +240,4 @@ sass:
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
-theme: jekyll-theme-merlot
+theme: jekyll-theme-hacker

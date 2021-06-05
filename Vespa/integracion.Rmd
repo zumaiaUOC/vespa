@@ -1,7 +1,7 @@
 ---
 title: 'PRA2 - Visualización'
 author: "Óscar Rojo Martín"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+date: "Junio 2021"
 degree: "Master Ciencia de datos"
 institute: "Universitat Oberta de Catalunya"
 toc-title: Índice

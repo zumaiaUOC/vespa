@@ -112,7 +112,7 @@ footer:
   links:
     - label : Repo on Github # Label
       icon  : fab fa-github # Fontawesome 5 icon
-      url   : https://zumaiauoc.github.io/vespa/ # A link or email: https://twitter.com/jack, mail@example.com
+      url   : https://zumaiauoc.github.io/vespa # A link or email: https://twitter.com/jack, mail@example.com
     - label: "RSS"
       icon: "fa fa-rss"
       url:  "./atom.xml"

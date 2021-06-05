@@ -96,7 +96,7 @@ navbar:
     img     :  # An small image, try 30x30px
   nav:
   - title   : Readme
-    url     : https://github.com/zumaiaUOC/vespa/blob/master/README.mdç
+    url     : https://github.com/zumaiaUOC/vespa/blob/master/README.md
   - title   : Repo
     url     : https://github.com/zumaiaUOC/vespa
   - title   : Dataset

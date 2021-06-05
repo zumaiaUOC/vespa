@@ -106,7 +106,7 @@ navbar:
   - title   : ShinyApp
     url     : https://oscar-rojo-martin.shinyapps.io/Vespa
   - title   : Rpubs
-    url     : https://rpubs.com/zumaia/vespa
+    url     : <a href="{{ https://rpubs.com/zumaia/vespa }}" target="_blank">{{ rpubs }}</a>
 #  - title   : # Label submenu
 #    child:		
 #    - title: # Child label		

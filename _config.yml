@@ -8,10 +8,10 @@ remote_theme: dieghernan/chulapa
 # Overall options for your site, would affect your site SEO
 # Default values are explained
 locale                  :     #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
-title                   : Vespa Velutina - Avispa Asiatica en Bizkaia    #default["repository_name"]
+title                   : Data-clean    #default["repository_name"]
 title_separator         :     #default [" | "]
-subtitle                : Visualización de datos   #default [your-repository-tagline]  
-description             : PRACTICA #default [your-repository-tagline]
+subtitle                : Tipología y ciclo de vida de los datos    #default [your-repository-tagline]  
+description             : Limpieza y análisis de datos #default [your-repository-tagline]
 url                     :     #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
 baseurl                 :     #On Github Pages you may leave it blank. Have a look to: https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 words_per_minute        :     #default[200]
@@ -96,19 +96,11 @@ navbar:
     img     :  # An small image, try 30x30px
   nav:
   - title   : Readme
-    url     : https://github.com/zumaiaUOC/vespa/blob/master/README.md
+    url     : https://github.com/zumaiaUOC/data-clean/blob/master/README.md
   - title   : Repo
-    url     : https://github.com/zumaiaUOC/vespa
+    url     : https://github.com/zumaiaUOC/data-clean
   - title   : Dataset
-    url     : https://kopuru.com/desafio/vespa-velutina
-  - title   : Readme
-    url     : https://github.com/zumaiaUOC/vespa/blob/master/README.md
-  - title   : DataStudiio
-    url     : https://datastudio.google.com/s/uzZi6wVBX-8
-  - title   : ShinyApp
-    url     : https://oscar-rojo-martin.shinyapps.io/Vespa
- - title    : Rpubs
-    url     : https://rpubs.com/zumaia/vespa
+    url     : https://www.kaggle.com/sulianova/cardiovascular-disease-dataset?select=cardio_train.csv
 #  - title   : # Label submenu
 #    child:		
 #    - title: # Child label		

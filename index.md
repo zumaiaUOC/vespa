@@ -88,7 +88,7 @@ La complejidad data de las diferentes fuentes que nos ofrecen y su futura integr
 
 ## Rpubs
 
-<iframe width="750" height="563" frameborder="no" src="https://rpubs.com/zumaia/vespa/"> </iframe>
+[https://rpubs.com/zumaia/vespa/](https://rpubs.com/zumaia/vespa/)
 
 # Licencia
 El contenido de este proyecto esta licencia bajo la [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/), 

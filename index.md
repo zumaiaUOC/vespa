@@ -21,7 +21,7 @@ subtitle: Visualización Datos
 * Master de Data Science.  
 * [Universitat Oberta of Catalunya.](http://www.uoc.edu)  
 * Consultor/Profesor: Ignacio Javier Alcalde Perea  -  ialcalde@uoc.edu
-* 
+
 ## Dataset
 
 Puede chequear el dataset en la siguiente dirección:
@@ -42,6 +42,7 @@ La diversidad de presas del avispón aumenta cuanto más rico es el entorno en i
 Las avispas obreras detectan las colonias de abejas por el olor de la miel y del polen ensilado en las colmenas Los insectos adultos se alimentan de diferentes líquidos azucarados como néctares de flores de árboles y arbustos, zumos de frutas maduras, excreciones azucaradas de pulgones y savia de cortezas de árboles. 
         
 ## Propietarios de los datos  
+
 [![Kopuru-Vespa Vetulina](https://kopuru.com/wp-content/uploads/2017/07/kopuru-black.png)](https://kopuru.com/desafio/vespa-velutina)
 
 ## Conjunto de datos sobre la Avispa Asiatica en Bizkaia  
@@ -55,7 +56,7 @@ Contamos con los datos hasta el 2019.
 La complejidad data de las diferentes fuentes que nos ofrecen y su futura integración con los siguientes datasets:
 
 * [Localización de estaciones metereológicas.](https://kopuru.com/wp-content/uploads/2021/02/LOCALIZACION-ESTACIONES-METEOROLOGICAS.csv)  
-* 
+
 * Datos brutos recogidos por las estaciones meteorológicas.  
     * [2019](https://kopuru.com/wp-content/uploads/2021/02/CSV-2019-ESTACIONES.zip)  
     * [2018](https://kopuru.com/wp-content/uploads/2021/02/CSV-2018-ESTACIONES.zip)  

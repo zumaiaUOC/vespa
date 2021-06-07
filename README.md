@@ -107,8 +107,9 @@ El proyecto presentado cumple los siguientes bjetivos:
 ##### 6- Diseño de textos (títulos, leyendas...) correctos.
 
 [![shinyapp](img/shinyapp.png)](https://oscar-rojo-martin.shinyapps.io/Vespa/)
-[![shinyapp](img/datastudio.png)](https://oscar-rojo-martin.shinyapps.io/Vespa/)
-[![shinyapp](img/rpubs.png)](https://rpubs.com/zumaia/vespa)
+[![datastudio](img/datastudio.png)](https://oscar-rojo-martin.shinyapps.io/Vespa/)
+[![flourish](img/flourish.png)](https://public.flourish.studio/story/883987/)
+[![rpubs](img/rpubs.png)](https://rpubs.com/zumaia/vespa)
 
 ### 5) Entrega de documentos.
  

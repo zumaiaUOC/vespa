@@ -10,6 +10,9 @@ subtitle: Visualización Datos
 ![](https://github.com/zumaiaUOC/vespa/blob/main/Vespa/www/banner_vespas.jpg)
 
 
+[Proyecto continuación al de selección de dataset](https://rpubs.com/zumaia/seleccion_de_datos)
+
+
 
 ## Autor  
  

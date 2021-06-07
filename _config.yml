@@ -105,6 +105,8 @@ navbar:
     url     : https://datastudio.google.com/s/uzZi6wVBX-8
   - title   : Shinyapp
     url     : https://oscar-rojo-martin.shinyapps.io/Vespa
+  - title   : Flourish
+    url     : https://public.flourish.studio/story/883987/
   - title   : Rpubs
     url     : https://rpubs.com/zumaia/vespa
 #  - title   : # Label submenu

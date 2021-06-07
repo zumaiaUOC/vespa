@@ -40,12 +40,15 @@ Se ha realizado un Dashboard-Panel de control, con multiples filtros para obtene
 [![shinyapp](img/datastudio.png)](https://datastudio.google.com/u/0/reporting/05d2c7c4-58b6-448e-86f7-2829b7326f10/page/RbGNC?s=uzZi6wVBX-8)
 
 <iframe width="300" height="225" src="https://datastudio.google.com/embed/reporting/05d2c7c4-58b6-448e-86f7-2829b7326f10/page/RbGNC" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 ---
+
 Se ha generado un aplicación para mostrar en pantalla la ubicación de los nidos detectados y posteriormente el detalle de los mismos en formato tabla.
 
 [![shinyapp](img/shinyapp.png)](https://oscar-rojo-martin.shinyapps.io/Vespa/)
 
 <iframe width="300" height="225" frameborder="no" src="https://oscar-rojo-martin.shinyapps.io/Vespa/"> </iframe>
+
 ---
 
 Se ha generado un aplicación para mostrar en pantalla la ubicación de los nidos detectados y posteriormente el detalle de los mismos en formato tabla.  
@@ -55,6 +58,7 @@ Se ha generado un aplicación para mostrar en pantalla la ubicación de los nido
 <div class="flourish-embed" data-src="story/883987"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 ---
+
 Por último se ha generado un archivo html con varias transformaciones y visualizaciones de varios datasets
 
 [![shinyapp](img/rpubs.png)](https://rpubs.com/zumaia/vespa)

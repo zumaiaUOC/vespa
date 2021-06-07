@@ -1,5 +1,11 @@
 #La Avispa Asiatica en Bizkaia 2018-2019
 
+
+El presente proyecto es continuación del de seleción de dataset
+
+[Selección de dataset](https://rpubs.com/zumaia/seleccion_de_datos)
+
+
 ### 1) Título de la visualización donde se presentan la visualización realizada. URL de la visualización y del código. Y descripción corta del documento y del que se presenta
 Presentación
 
@@ -31,7 +37,7 @@ Se han escogido varias visualizaciónes y en diferentes formatos.
 
 Se ha realizado un Dashboard-Panel de control, con multiples filtros para obtener el número de nidos por municipio entre otras cosas.
 
-[![shinyapp](img/datastudio.png)](https://oscar-rojo-martin.shinyapps.io/Vespa/)
+[![shinyapp](img/datastudio.png)](https://datastudio.google.com/u/0/reporting/05d2c7c4-58b6-448e-86f7-2829b7326f10/page/RbGNC?s=uzZi6wVBX-8)
 
 <iframe width="300" height="225" src="https://datastudio.google.com/embed/reporting/05d2c7c4-58b6-448e-86f7-2829b7326f10/page/RbGNC" frameborder="0" style="border:0" allowfullscreen></iframe>
 ---
@@ -40,6 +46,14 @@ Se ha generado un aplicación para mostrar en pantalla la ubicación de los nido
 [![shinyapp](img/shinyapp.png)](https://oscar-rojo-martin.shinyapps.io/Vespa/)
 
 <iframe width="300" height="225" frameborder="no" src="https://oscar-rojo-martin.shinyapps.io/Vespa/"> </iframe>
+---
+
+Se ha generado un aplicación para mostrar en pantalla la ubicación de los nidos detectados y posteriormente el detalle de los mismos en formato tabla.  
+
+[![flourish](img/flourish.png)](https://public.flourish.studio/story/883987/)  
+
+<div class="flourish-embed" data-src="story/883987"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
 ---
 Por último se ha generado un archivo html con varias transformaciones y visualizaciones de varios datasets
 

@@ -1,4 +1,4 @@
-#La Avispa Asiatica en Bizkaia 2018-2019
+# La Avispa Asiatica en Bizkaia 2018-2019
 
 
 El presente proyecto es continuación del de seleción de dataset
@@ -20,12 +20,12 @@ Presentación
 
 #### 1.2- La URL funciona y es públicamente accesible.
 
-##https://zumaiauoc.github.io/vespa/
+## https://zumaiauoc.github.io/vespa/
 
 
 #### 1.3 - La descripción es cuidadosa, consistente y ayuda a presentar la visualización.
 
-##[Descripción](https://github.com/zumaiaUOC/vespa/blob/main/index.md)
+## [Descripción](https://github.com/zumaiaUOC/vespa/blob/main/index.md)
 
 ### 2) Explicar razonadamente qué preguntas responde la visualización presentada y qué uso puede tener por un usuario tipo.
 Explicación visualización 
